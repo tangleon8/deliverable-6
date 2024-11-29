@@ -1,0 +1,315 @@
+/* This is the home screen */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e;
+    color: #fdb515;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Header content */
+header {
+    background-color: #fdb515; 
+    padding: 20px 0;
+    color: #000;
+    text-align: center;
+    border-bottom: 2px solid #000;
+}
+
+/* Container for everything in the header for positioning and formatting */
+.header-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: inline-block;
+    text-align: center;
+    position: relative; 
+}
+
+/* UMBC logo */
+.logo {
+    width: 60px;
+    height: auto;
+    position: absolute;
+    left: 20px; /
+    top: 50%;
+}
+
+/* Title styling for the header*/
+.header-title {
+    display: inline-block;
+    font-size: 2rem;
+    margin: 0;
+}
+
+/* Navigation menu */
+.menu-dropdown {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+}
+
+/* Unordered list for the navigation*/
+.menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+/* List item styling in the navigation */
+.menu-list li {
+    display: inline;
+    margin-left: 20px;
+}
+
+/* Link styling within the list items  */
+.menu-list li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+
+/* Search bar */
+.search-form {
+    margin-top: 15px; 
+}
+
+/* Input field for the search input*/
+.search-form input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #000;
+    border-right: none;
+    width: 300px; 
+}
+
+/* Button styles for the search form, pointer shwos it is clickable*/
+.search-form button {
+    padding: 10px;
+    background-color: #000;
+    color: #fdb515;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+
+/* Styling for the main content area and using a flexbox for layout */
+.content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Container for review elements and using twice the space of the sidebar   */
+.review-container {
+    flex: 2;
+}
+
+/* Section for showing recent reviews */
+.recent-reviews {
+    margin-bottom: 20px;
+}
+
+/* Adding a review section  */
+.add-review {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Sidebar styling which takes the sapce when used with the review container */
+.sidebar {
+    flex: 1;
+    margin-left: 20px;
+}
+
+/* Styling for the headings  */
+h2 {
+    color: #fdb515;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #fdb515;
+    padding-bottom: 5px;
+}
+
+/* The quotes for the reviews*/
+blockquote {
+    font-style: italic;
+    background-color: #1e1e1e;
+    padding: 10px;
+    border-left: 5px solid #fdb515;
+    margin-top: 10px;
+}
+
+/* The reactions for like, dislke, laughs, and comments */
+.reaction-buttons {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* Style for the reaction buttons */
+.reaction {
+    background-color: #333;
+    color: #fdb515;
+    border: 2px solid #fdb515;
+    padding: 5px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+/*Scrollable table styles */
+.scrollable-table {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+/* Review text box styling with an emphasis of making a large box to type */
+#review-text {
+    width: 100%; 
+    padding: 10px; 
+    border: 2px solid #fdb515; 
+    background-color: #1e1e1e; 
+    color: #fdb515; 
+    border-radius: 5px; 
+    font-size: 1rem; 
+    box-sizing: border-box; 
+}
+
+/* Table styles for the content in the scrollable table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #1e1e1e;
+    color: #fdb515;
+}
+
+/* Styles for table headers and cells*/
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #fdb515;
+}
+
+/* Same above, just using the table styles */
+th {
+    background-color: #000;
+    font-weight: bold;
+}
+
+/* Layout for the campus map*/
+.campus-map {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Styles for the labels in the add-review and how the section is stacked */
+.add-review form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styling for the add-review section*/
+.add-review label {
+    margin: 10px 0 5px;
+    color: #fdb515;
+}
+
+/* Uniform styles for the select and textareas */
+.add-review select,
+.add-review textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #fdb515;
+    background-color: #1e1e1e;
+    color: #fdb515;
+    border-radius: 5px;
+}
+/* customer.reviews.html, which shows all customer reviews (2nd Screen)*/
+
+
+/* layout for backbutton on the  */
+.back-button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #000;
+    color: #fdb515;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border: 2px solid #fdb515;
+}
+
+/* Styles for showing the reactions */
+.reaction-counts {
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+    
+/* Reaction count styles*/
+
+.reaction-counts span {
+    margin-right: 15px;
+}
+
+/* Styles for the submit lik*/
+
+.add-review button {
+    padding: 10px;
+    background-color: #000;
+    color: #fdb515;
+    border: 2px solid #fdb515;
+    margin-top: 10px;
+    cursor: pointer;
+}
+/*  Layout for view-reviews link*/
+.view-reviews {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fdb515;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 2px solid #fdb515;
+    margin-top: 15px;
+}
+
+/* How the footer looks */
+footer {
+    background-color: #fdb515;
+    color: #000;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.menu-list a.active {
+    background-color: #fdb515;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.review-item {
+    background-color: #000; 
+    color: #fdb515;
+    border: 2px solid #fdb515; 
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.rating {
+    color: #fdb515; /* Keep the stars in UMBC yellow */
+}
+
+.sort-options select {
+    background-color: #000; /* Black dropdown */
+    color: #fdb515; /* Yellow text in dropdown */
+    border: 1px solid #fdb515; /* Yellow border */
+    padding: 5px;
+    border-radius: 5px;
+}
